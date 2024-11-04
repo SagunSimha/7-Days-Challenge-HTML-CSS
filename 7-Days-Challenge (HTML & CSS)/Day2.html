@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="Day2.css">
+</head>
+
+<body>
+    <!-- 7-Days-Challenge -->
+    <!-- Day-2 Revising CSS -->
+    <section class="css_revision">
+        <!-- selector -->
+        <section class="section1">
+            <h2>Section 1 - Basic Selectors</h2>
+            <ol>
+                <li><code>*</code> - Universal Selector</li>
+                <li><code>p</code> - Type Selector</li>
+                <li><code>.classname</code> - Class Selector</li>
+                <li><code>#elementId</code> - ID Selector</li>
+                <li><code>input[type="text"]</code> - Attribute Selector</li>
+            </ol>
+            <h2>Combinator Selectors</h2>
+            <ol>
+                <li><code>div p</code> - Descendant Selector (space)</li>
+                <li><code>ul &gt; li</code> - Child Selector</li>
+                <li><code>h1 + p</code> - Adjacent Sibling Selector</li>
+                <li><code>h1 ~ p</code> - General Sibling Selector</li>
+            </ol>
+            <h2>Grouping Selector</h2>
+            <ol>
+                <li><code>h1, h2, h3</code> - Group Selector</li>
+            </ol>
+            <h2>Pseudo-Class Selectors</h2>
+            <ol>
+                <li><code>a:hover</code> - Hover Pseudo-Class</li>
+                <li><code>input:focus</code> - Focus Pseudo-Class</li>
+                <li><code>p:first-child</code> - First-Child Pseudo-Class</li>
+                <li><code>p:last-child</code> - Last-Child Pseudo-Class</li>
+                <li><code>li:nth-child(2)</code> - Nth-Child Pseudo-Class</li>
+                <li><code>div:not(.special)</code> - Negation Pseudo-Class</li>
+            </ol>
+            <h2>Pseudo-Element Selectors</h2>
+            <ol>
+                <li><code>h1::before</code> - Before Pseudo-Element</li>
+                <li><code>p::after</code> - After Pseudo-Element</li>
+                <li><code>p::first-line</code> - First-Line Pseudo-Element</li>
+                <li><code>p::first-letter</code> - First-Letter Pseudo-Element</li>
+            </ol>
+            <h2>Attribute Selectors (Detailed)</h2>
+            <ol>
+                <li><code>[disabled]</code> - Attribute Selector</li>
+                <li><code>[type="submit"]</code> - Exact Attribute Selector</li>
+                <li><code>a[href^="https"]</code> - Attribute Starts With Selector</li>
+                <li><code>img[src$=".png"]</code> - Attribute Ends With Selector</li>
+                <li><code>a[href*="example"]</code> - Attribute Contains Selector</li>
+            </ol>
+        </section>
+        <!-- Box Modle -->
+        <section class="section2">
+            <h1>Section 2 - BOX MODLE</h1>
+            <br>
+            <p>The CSS Box Model is a fundamental concept that describes how elements are structured and displayed on a
+                webpage.</p>
+            <p>This box demonstrates the CSS Box Model, including content, padding, border, and margin.</p>
+            <div class="box_modle">
+                CONTENT
+            </div>
+        </section>
+        <!-- CSS Display Properties -->
+        <section class="section3">
+            <h1>Section 3 - CSS Display Properties</h1>
+
+            <h2>Block</h2>
+            <div class="block-element">This is a block element. It takes up the full width of its container.</div>
+
+            <h2>Inline</h2>
+            <span class="inline-element">This</span>
+            <span class="inline-element">is</span>
+            <span class="inline-element">an</span>
+            <span class="inline-element">inline</span>
+            <span class="inline-element">element.</span>
+
+            <h2>Inline-Block</h2>
+            <div class="inline-block-element">Item 1</div>
+            <div class="inline-block-element">Item 2</div>
+            <div class="inline-block-element">Item 3</div>
+
+            <h2>None (Element is Hidden)</h2>
+            <div class="none-element">This element is hidden using display: none;</div>
+
+            <h2>Flex</h2>
+            <div class="flex-container">
+                <div class="flex-item">Flex Item 1</div>
+                <div class="flex-item">Flex Item 2</div>
+                <div class="flex-item">Flex Item 3</div>
+            </div>
+
+            <h2>Grid</h2>
+            <div class="grid-container">
+                <div class="grid-item">Grid Item 1</div>
+                <div class="grid-item">Grid Item 2</div>
+                <div class="grid-item">Grid Item 3</div>
+                <div class="grid-item">Grid Item 4</div>
+                <div class="grid-item">Grid Item 5</div>
+                <div class="grid-item">Grid Item 6</div>
+            </div>
+
+            <h2>Inline-Flex</h2>
+            <div class="inline-flex-container">
+                <div class="flex-item">Inline Flex Item 1</div>
+                <div class="flex-item">Inline Flex Item 2</div>
+                <div class="flex-item">Inline Flex Item 3</div>
+            </div>
+
+            <h2>Table</h2>
+            <div class="table">
+                <div class="table-row">
+                    <div class="table-cell">Table Cell 1</div>
+                    <div class="table-cell">Table Cell 2</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Table Cell 3</div>
+                    <div class="table-cell">Table Cell 4</div>
+                </div>
+            </div>
+        </section>
+        <!-- Positioning -->
+        <section class="section4">
+            <h1 style="color: black;">Section 4 - CSS Positioning</h1>
+
+            <div class="container">
+                <p class="sticky-element">Sticky Position: This element will stick to the top of the container when
+                    scrolled to its position. <br> <br> Scroll to see sticky behavior in action! and find relative position</p>
+                <br>
+                <p class="static-element">Static Position: This element is positioned according to the normal document
+                    flow.</p>
+                <br>
+                <p class="relative-element">Relative Position: This element is shifted from its normal position by 600px
+                    down and 20px to the right.</p>
+                <br>
+                <p class="absolute-element">Absolute Position: This element is absolutely positioned 20px from the top
+                    and 20px from the right of its nearest positioned ancestor.</p>
+                <br>
+            </div>
+            <div class="fixed-element">Fixed Position (section 4): This element stays in the same place even when scrolling.</div>
+        </section>
+        <!-- Flex box -->
+        <section class="section5">
+            <h2>Section 5 - Flex box Practise</h2>
+        </section>
+        <!-- Grid -->
+        <section class="section6">
+            <h2>Section 6 - Grid Practise</h2>
+        </section>
+        <!-- Floats and Clearing -->
+        <section class="section7">
+            <h1>Floats and Clearing</h1>
+            <div class="container clearfix">
+                <div class="image-left">Left Float</div>
+                <div class="image-right">Right Float</div>
+                <p style="background-color: rgb(95, 123, 147); margin-top: 12px; padding: 10px;">
+                    This is some text content that wraps around the floated elements. <br>
+                    Floats are useful for basic layouts and positioning images to the left or right of text.
+                </p>
+                <p class="clearfix">This text will appear below the floated elements, thanks to the clearfix.</p>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
