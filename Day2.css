@@ -1,0 +1,329 @@
+*{
+    font-family: monospace;
+    color: rgb(144, 197, 244);
+}
+
+h1{
+    margin: 0%;
+    padding: 0%;
+    color: #bad9ee;
+}
+
+h3 {
+    margin: 0%;
+    padding: 0%;
+    color: #CE9178;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+a:hover {
+    color: rgb(28, 36, 43);
+}
+
+.navigation_bar_links {
+    border: 1px solid #191717;
+    height: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #037579;
+}
+
+p,
+li {
+    margin: 0%;
+    padding: 0%;
+    color: beige ;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    background-color:#1F1F1F;
+}
+
+.navigation_bar{
+    background-color: rgb(37, 21, 21);
+    margin: 0%;
+    padding: 0%;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.hidden {
+    display: none;
+}
+
+.main_div {
+    margin: 0%;
+    padding: 0%;
+}
+
+.page {
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    width: 100%;
+}
+
+#page2 {
+    min-height: 100vh;
+}
+
+.section1 {
+    padding: 80px 10px;
+    margin: 0%;
+    background-color: #251610;
+    min-height: auto;
+}
+
+.section2 {
+    background-color: #4C243B;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+
+.section3 {
+    background-color: #251610;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+
+.section4 {
+    background-color: #4C243B;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+
+.section5 {
+    background-color: #251610;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+.section6 {
+    background-color: #4C243B;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+.section7 {
+    background-color: #251610;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+
+/* Box Modle */
+
+.box_modle {
+    background-color: #037579;
+    height: 10px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid white;
+    color:black
+}
+
+/* Display Properties */
+.block-element {
+    display: block;
+    background-color: lightcyan;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inline-element {
+    display: inline;
+    background-color: lightcyan;
+    padding: 5px;
+}
+
+.inline-block-element {
+    display: inline-block;
+    background-color: lightcyan;
+    padding: 10px;
+    width: 100px;
+    margin-right: 5px;
+}
+
+.none-element {
+    display: none; /* Hidden element */
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+.flex-item {
+    background-color: rgb(70, 29, 7);
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: lightpink;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.inline-flex-container {
+    display: inline-flex;
+    gap: 10px;
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    background-color: lightseagreen;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 10px;
+    border: 2px solid rgb(5, 228, 244);
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+
+/* CSS Positioning */
+
+/* Container styling */
+.container {
+    position: relative;
+    width: 80%;
+    height: 820px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    margin-top: 10px;
+    border: 2px solid black;
+    height: 600px;
+    overflow: auto;
+}
+
+/* Static position (default) */
+.static-element {
+    position: static;
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Relative position */
+.relative-element {
+    position: relative;
+    top: 300px;
+    left: 20px;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Absolute position */
+.absolute-element {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightcoral;
+    padding: 10px;
+    width: 150px;
+}
+
+/* Fixed position */
+.fixed-element {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    background-color: #aba8b256;
+    padding: 10px;
+    width: 100px;
+    color: black;
+}
+
+/* Sticky position */
+.sticky-element {
+    color: black;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+}
+
+
+/* Section 6 Floats and Clearing */
+
+/* Container styling */
+.container { 
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* Float left */
+.image-left {
+    float: left;
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    background-color: lightblue;
+    color: #191717;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Float right */
+.image-right {
+    float: right;
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    background-color: lightcoral;
+    color: black;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Clear both */
+.clearfix {
+    clear: both;
+}
+
+/* Clearfix hack to contain floated elements within a container */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
