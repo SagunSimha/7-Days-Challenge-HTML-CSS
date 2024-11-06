@@ -1,0 +1,205 @@
+*{
+    font-family: monospace;
+    color: rgb(144, 197, 244);
+}
+
+h1{
+    margin: 0%;
+    padding: 0%;
+    color: #bad9ee;
+}
+
+h3 {
+    margin: 0%;
+    padding: 0%;
+    color: #CE9178;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+a:hover {
+    color: rgb(28, 36, 43);
+}
+
+.navigation_bar_links {
+    border: 1px solid #191717;
+    height: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #037579;
+}
+
+p,
+li {
+    margin: 0%;
+    padding: 0%;
+    color: beige ;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    background-color:#1F1F1F;
+}
+
+.navigation_bar{
+    background-color: rgb(37, 21, 21);
+    margin: 0%;
+    padding: 0%;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.hidden {
+    display: none;
+}
+
+.main_div {
+    margin: 0%;
+    padding: 0%;
+}
+
+.page {
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    width: 100%;
+}
+
+#page2 {
+    min-height: 100vh;
+}
+
+.section1 {
+    padding: 80px 10px;
+    margin: 0%;
+    background-color: #251610;
+    min-height: auto;
+}
+
+.section2 {
+    background-color: #4C243B;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+
+.section3 {
+    background-color: #251610;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+
+.section4 {
+    background-color: #4C243B;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+
+.section5 {
+    background-color: #251610;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+.section6 {
+    background-color: #4C243B;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+.section7 {
+    background-color: #251610;
+    padding: 10px 10px;
+    margin: 0%;
+    min-height: auto;
+}
+
+/* Flex box */
+/* Flex container styling */
+.flex-container {
+    margin: 10px;
+    display: flex;                   /* Enables Flexbox layout */
+    flex-direction: row;             /* Horizontal layout (default) */
+    justify-content: space-around;   /* Distribute space around each item */
+    align-items: center;             /* Align items vertically in the center */
+    height: auto;                   /* Full viewport height */
+    border: 1px rgb(192, 36, 36) solid;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* Flex items styling */
+.flex-item {
+    background-color: #4CAF50;    /* Green background */
+    color: white;                 /* White text color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 50px;                    /* Fixed width for each item */
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.flex-item-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-item-right {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+/* Grid */
+/* Grid container */
+.grid-container {
+    display: grid;                      /* Enables Grid layout */
+    grid-template-columns: 1fr 1fr; /* Defines three equal-width columns */
+    grid-template-rows: auto;           /* Rows will automatically adjust height */
+    gap: 10px;                          /* Space between grid items */
+    padding: 20px;
+}
+
+/* Grid items */
+.grid-item {
+    background-color: #4CAF50;          /* Green background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Flex inside grid */
+
+#Experimental-grid-item1 {
+    background-color: #4caf4f85;          /* Green background */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Experimental-grid-item2 {
+    display: grid;                      /* Enables Grid layout */
+    grid-template-columns: 1fr 1fr;     /* Defines three equal-width columns */
+    grid-template-rows: auto;           /* Rows will automatically adjust height */
+    gap: 10px;                          /* Space between grid items */
+    background-color: #705757;  
+}
